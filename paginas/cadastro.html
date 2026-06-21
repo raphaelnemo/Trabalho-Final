@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Conheça Carmo - Solicitar informações</title>
+    <link rel="icon" href="../img/favicon-32x32.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <nav class="navegacao-principal">
+        <a href="../index.html">
+            <img src="../img/logo.png" class="logo" alt="Página inicial">
+        </a>
+        <ul class="menu">
+            <li> <a href="/index.html">Início</a></li>
+            <li><a href="../paginas/cultura.html">Cultura</a></li>
+            <li><a href="../paginas/servicos.html">Serviços</a></li>
+            <li><a href="../paginas/cadastro.html">Cadastro</a></li>
+            <li><a href="../paginas/sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo principal  -->
+    <main class="conteudo-principal">
+    <h1 class="titulo-principal">Faça seu cadastro e envie informações</h1>
+
+    <section class="container-cadastro">
+        <div class="coluna-formulario">
+            <form method="get">
+                <fieldset>
+                    <legend>Seus Dados</legend>
+                    <br>
+                    <label for="nome">Digite seu nome: </label>
+                    <input type="text" name="nome" id="nome" required placeholder="Digite seu nome completo" autofocus><br><br>
+                    
+                    <label for="email">Digite seu e-mail: </label>
+                    <input type="email" name="email" id="email" required placeholder="email@exemplo.com"><br><br>
+                    
+                    <label for="telefone">Digite seu telefone: </label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(XX) XXXXX-XXXX"><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>O que você deseja fazer?</legend>
+                    <br>
+                    <input type="radio" name="tipo_solicitacao" id="cadastrar_estab" value="cadastrar_estabelecimento">
+                    <label for="cadastrar_estab">Cadastrar um novo estabelecimento</label><br><br>
+                    
+                    <input type="radio" name="tipo_solicitacao" id="inserir_cultura" value="inserir_cultura">
+                    <label for="inserir_cultura">Inserir uma nova informação cultural ou atração</label><br><br>
+                    
+                    <input type="radio" name="tipo_solicitacao" id="nova_curiosidade" value="nova_curiosidade">
+                    <label for="nova_curiosidade">Sugerir uma curiosidade sobre a cidade de Carmo</label><br><br>
+                    
+                    <input type="radio" name="tipo_solicitacao" id="corrigir_info" value="corrigir_info">
+                    <label for="corrigir_info">Solicitar a correção de alguma informação do site</label><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Detalhes da Sugestão</legend>
+                    <br>
+                    <label for="imagem">Envie uma foto ilustrativa do local: </label>
+                    <input type="file" name="imagem" id="imagem" accept="image/*"><br><br>
+                    
+                    <label for="obs">Descreva as informações aqui:</label><br>
+                    <textarea name="obs" id="obs" rows="5" style="width: 100%; margin-top: 10px;" placeholder="Escreva aqui o texto da curiosidade, os dados do estabelecimento ou o erro encontrado..." required></textarea>
+                </fieldset>
+                <br>
+                <div class="botoes-form">
+                    <input type="submit" value="Enviar Solicitação" class="btn-enviar">
+                    <input type="reset" value="Limpar Formulário" class="btn-limpar">
+                </div>
+            </form>
+        </div>
+
+        <div class="coluna-imagem">
+            <img src="../img/formulario.png" alt="Imagem ilustrativa de cadastro" class="img-cadastro">
+        </div>
+    </section>
+    </main>
+    
+
+        <footer>
+        <div class="rodape-site">
+            <p>Trabalho final da disciplina de Desenvolvimento WEB I</p>
+            <p>IF Sudeste - Polo Muriaé</p>
+            <p>Professor: Diego Rossi</p>
+            <p>1º Período - Semestre 1/2026</p>
+            <p>Aluno: Raphael Baía</p>
+        </div>
+
+    </footer>
+</body>
+</html>
