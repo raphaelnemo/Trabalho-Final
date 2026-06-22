@@ -344,14 +344,7 @@ td {
 }
 
 
-tr:last-child td {
-    border-bottom: none;
-}
 
-
-tr:hover td {
-    background-color: rgba(114, 136, 174, 0.08);
-}
 
 
 .galeria-imagem {
