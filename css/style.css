@@ -185,7 +185,7 @@ footer{
 
 .grid-inicio{
     display: grid;
-    grid-template-columns: 0.3fr 0.5fr;
+    grid-template-columns: 0.3fr 0.9fr;
     gap: 40px;
     align-items: center;
     padding: 20px 40px;
